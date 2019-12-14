@@ -1,0 +1,392 @@
+@font-face{
+	font-family: 'Roboto', sans-serif;
+}
+html{
+	height: 100%;
+}
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Roboto', sans-serif; 
+}
+/* side bar css */
+
+.mini-submenu{  
+  background-color: rgba(0, 0, 0, 0); 
+  padding: 9px;  
+  width: 50px;
+}
+.menu-group{
+	display: none;
+	width: 70%;
+	position: absolute;
+	z-index: 100;
+	background-color: #380d5b;
+	padding: 10px 20px;
+	padding-bottom: 42.8rem;
+}
+
+.mini-submenu:hover{
+  cursor: pointer;
+}
+
+.mini-submenu .icon-bar {
+  border-radius: 1px;
+  display: block;
+  height: 2px;
+  width: 22px;
+  margin-top: 3px;
+}
+
+.mini-submenu .icon-bar {
+  background-color: #000;
+}
+
+#slide-submenu{
+  background: #fff;
+  display: inline-block;
+  padding: 0 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+/* menu bar start */
+.menu-custom ul li{
+	list-style: none;
+	padding: 15px 0;
+	border-top: 1px solid #fff 20px;
+	border-bottom: 1px solid #fff;
+}
+.menu-custom ul li a{
+	color: #fff;
+	text-transform: capitalize;
+	font-size: 12px;
+	text-decoration: none;
+}
+.menu-custom ul li i{
+	font-size: 12px;
+}
+.text-custom{
+	margin: 0 10px;
+}
+.mr-10{
+	margin-left: 4rem;
+}
+
+
+/* menubar end */
+/* for index */
+.index-logo-custom{
+	margin-top: -30px !important;
+    margin-left: 5rem !important;
+}
+.index-lgo{
+	margin-left: 40px;
+}
+.single-img{
+	display: flex;
+	flex-wrap: wrap;
+}
+.single-img .signle-img-content{
+	flex:20%;
+}
+.signle-img-content p{
+	font-size: 12px;
+}
+.icon-logo{
+	background-color: #e7e7e7;
+	padding: 15px 0;
+}
+/* for about pages */
+.navbar-custom{
+	position: absolute;
+}
+.menu-group-list{
+	padding-bottom: 42.4rem !important;
+}
+.menu-group-about{
+	padding-bottom: 32.2rem !important; 
+}
+.menu-group-map{
+	padding-bottom: 3.5rem; 
+}
+.btn-focus{
+	border: none;
+}
+.btn-focus:focus{
+	outline: 5px auto #6f379c !important;
+}
+.from-inline-custom{
+	margin-left: -20px;
+    margin-top: 9px;
+}
+.from-custom{
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: capitalize;
+	width: 80%;
+	padding: 18px 10px 18px 0;
+	border: none;
+	border-bottom-width: 6rem;
+	border-bottom: 3px solid #b4b4b4;
+	transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+	border-radius: 0;
+}
+.from-custom:focus {
+    color: #6f379c;
+    font-weight: 700;
+    background-color: #fff;
+    border-color: #6f379c;
+    outline: 0;
+    box-shadow: none !important;
+}
+.from-inline-custom a{
+	padding: 0 5px; 
+}
+/* horizontal line */
+.hr-custom{
+	margin-bottom: 0;
+	border-top: 3px solid #6f379c;
+}
+/* banner */
+.bg-white{
+	padding: 0 10px;
+	-webkit-box-shadow: 5px 5px 5px 0px #bababa;
+	-moz-box-shadow: 5px 5px 5px 0px #bababa;
+	box-shadow: 5px 5px 5px 0px #bababa;
+}
+.banner{
+	background-color: #e7e7e7;
+	
+}
+.banner-img{
+	background-image: url('../images/aboutbanner.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 70px 0;
+}
+.banner-img img{
+	margin-top: -7rem;
+	margin-left: 15px;
+}
+.gallery-img{
+	padding: 10px;
+}
+/* rating  */
+.rating {
+      float: right;
+    text-align: center;
+    margin-top: 60px;
+    }
+
+    /* :not(:checked) is a filter, so that browsers that don’t support :checked don’t 
+      follow these rules. Every browser that supports :checked also supports :not(), so
+      it doesn’t make the test unnecessarily selective */
+    .rating:not(:checked) > input {
+        position:absolute;
+        top:-9999px;
+        clip:rect(0,0,0,0);
+    }
+
+    .rating:not(:checked) > label {
+        float:right;
+        width:1em;
+        /* padding:0 .1em; */
+        overflow:hidden;
+        white-space:nowrap;
+        cursor:pointer;
+        font-size:80%;
+        /* line-height:1.2; */
+        color:#6f379c;
+    }
+
+    .rating:not(:checked) > label:before {
+        content: '★ ';
+    }
+
+    .rating > input:checked ~ label {
+        color: grey;
+        
+    }
+
+    .rating:not(:checked) > label:hover,
+    .rating:not(:checked) > label:hover ~ label {
+        color: grey;
+        
+    }
+
+    .rating > input:checked + label:hover,
+    .rating > input:checked + label:hover ~ label,
+    .rating > input:checked ~ label:hover,
+    .rating > input:checked ~ label:hover ~ label,
+    .rating > label:hover ~ input:checked ~ label {
+        color: grey;
+        
+    }
+
+    .rating > label:active {
+        position:relative;
+        top:2px;
+        left:2px;
+    }
+    /* about content */
+    .about-content, .contact-info, .add p{
+    	font-size: 12px;
+    }
+    .about-content p:nth-child(1){
+    	font-weight: 700;
+    }
+    /* contact info */
+   .contact-info p:nth-child(1){
+    	font-weight: 700;
+    	margin-bottom: 0;
+    }
+	.add p:nth-child(1){
+		font-weight: 700;
+		margin-bottom: 0;
+
+	}
+	/* icon phone */
+	.icon{
+		margin: 0 auto;
+		width: 100px;
+		height: 100px;
+		border-radius: 50%;
+		background-color:#6f379c; 
+	}
+	.icon i{
+		color: #fff;
+		font-size: 35px;
+		margin-top: 30px;
+	}
+	/* button */
+	.m-t15{
+		margin-top: 15px;
+	}
+	.back-btn{
+		background-color: #f8aa49;
+		padding: 10px 0;
+		transition: 0.3s;
+	}
+	.back-btn:hover{
+	background-color: #f7c68a;
+	}
+	.p-r{
+		padding-right: 0;
+		padding-left: 5px;
+	}
+	.p-l{
+		padding-left: 0;
+		padding-right: 5px;
+	}
+	.map-btn{
+		background-color: #f7c68a;
+		padding: 10px 0;
+	}
+	.map-btn:hover{
+		background-color: #f8aa49;
+	}
+
+	.back-btn a, .map-btn a{
+			color: #fff !important;
+			font-size: 14px;
+	}
+	/* footer menu */
+	.footer{
+	position: sticky;
+    bottom: 0;
+    z-index: 1;
+    background-color: #fff;
+    width: 100%;
+	}
+	.footer-content img{
+		transition: 0.3s;
+
+	}
+	.footer-content img:hover{
+		border-radius: 50%;
+		border: 1px solid #6f379c;
+		
+	}
+	.footer-content p{
+		text-transform: uppercase;
+		font-weight: 700;
+		transition: 0.4s;
+		font-size: 10px;
+	}
+	.footer-content p:hover{
+		color: #6f379c;
+	}
+	.m-t-3{
+		margin-top: 5px;
+	}
+	.p-10{
+		padding: 10px 0 0 0;
+	}
+
+	/* its all about list view page */
+
+	.list-view{
+			background-color: #e7e7e7;
+	}
+	.list-inline-custom{
+		margin-left: 3rem !important;
+	}
+	.list-bg-white{
+		background-color: #fff;
+		padding: 10px 5px 0 5px;
+		margin: 10px 0;
+		-webkit-box-shadow: 5px 5px 5px 0px #bababa;
+		-moz-box-shadow: 5px 5px 5px 0px #bababa;
+		box-shadow: 5px 5px 5px 0px #bababa;
+	}
+	.list-bg-white-map{
+		padding: 0;
+	}
+	.list-hr{
+		margin-top: 0;
+	}
+	.list-content p{
+		margin-bottom: 0;
+	}
+	.list-content p:nth-child(3){
+		margin-top: 15px;
+	}
+	.list-img{
+		margin-top: 25px;
+	}
+	.rating-list{
+		position: absolute;
+		margin-top: 0;
+	}
+	.pl-10{
+		padding-left: 10px;
+	}
+	.pl-15{
+		padding-left: 15px;
+	}
+	.pr-15{
+		padding-right: 15px !important; 
+	}
+	.pr-10{
+		padding-right: 10px;
+	}
+	/* all about map css here */
+	.map{
+		padding: 20px 0;
+		background-color: #e7e7e7;
+	}
+
+	/* dropdown */
+.show-on-hover:hover > ul.dropdown-menu {
+    display: block;    
+}
+.dropdown-menu{
+	background: none;
+	position: relative !important;
+	margin-left: -145px;
+	border: none;
+}
+.caret{
+	margin-left: 112px;
+}
